@@ -1,6 +1,6 @@
 **Microsoft RMS Database Structure**
 
-Austin Hartzheim
+Original Article by Austin Hartzheim
 
 # Introduction
 
@@ -1388,6 +1388,10 @@ This table contains the messages which are displayed on the pole display
 -   **POTitle:**
 
 -   **POType:**
+    - "0" - Standard PO issued to Vendor
+    - "1" - Interbranch PO **Speculation**
+    - "2" - Transfer inventory *IN*
+    - "3" - Transfer inventory *OUT*
 
 -   **StoreID:**
 
