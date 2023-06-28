@@ -1392,8 +1392,8 @@ This table contains the messages which are displayed on the pole display
     - "1" - HQ Origin to vendor to branch? (In "Purchase Orders" list) **Speculation**
     - "2" - Local Transfer inventory *IN*
     - "3" - Local Transfer inventory *OUT*
-    - "4" - HQ Origin issued Inventory In? (Found in "Transfer inventory In" list) **Speculation**
-    - "5" - HQ Origin issued Inventory Out? (Found in "Trasnfer Inventory Out" list) **Speculation
+    - "4" - HQ Origin issued Inventory In (Found in "Transfer inventory In" list) (Confirmed from "Orders - Inventory transfer In List.qrp")
+    - "5" - HQ Origin issued Inventory Out (Found in "Transfer Inventory Out" list) (Confirmed from "Orders - Inventory transfer Out List.qrp")
 
 -   **StoreID:**
 
