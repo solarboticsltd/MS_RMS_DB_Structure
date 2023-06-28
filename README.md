@@ -1389,9 +1389,11 @@ This table contains the messages which are displayed on the pole display
 
 -   **POType:**
     - "0" - Standard PO issued to Vendor
-    - "1" - Interbranch PO **Speculation**
-    - "2" - Transfer inventory *IN*
-    - "3" - Transfer inventory *OUT*
+    - "1" - HQ Origin to vendor to branch? (In "Purchase Orders" list) **Speculation**
+    - "2" - Local Transfer inventory *IN*
+    - "3" - Local Transfer inventory *OUT*
+    - "4" - HQ Origin issued Inventory In? (Found in "Transfer inventory In" list) **Speculation**
+    - "5" - HQ Origin issued Inventory Out? (Found in "Trasnfer Inventory Out" list) **Speculation
 
 -   **StoreID:**
 
