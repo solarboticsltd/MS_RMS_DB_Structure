@@ -1381,95 +1381,137 @@ This table contains the messages which are displayed on the pole display
 
 ## PurchaseOrder
 
-### Columns
+-   **BatchNumber:**
 
+    ORDINAL_POSITION: 31, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: int, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **ConfirmingTo:**
+
+    ORDINAL_POSITION: 20, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 20
+ 
+-   **CurrencyID:**
+
+    ORDINAL_POSITION: 25, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: int, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **DateCreated:**
+
+    ORDINAL_POSITION: 9, COLUMN_DEFAULT: (getdate()), IS_NULLABLE: NO, DATA_TYPE: datetime, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **DatePlaced:**
+
+    ORDINAL_POSITION: 30, COLUMN_DEFAULT: , IS_NULLABLE: YES, DATA_TYPE: datetime, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **DBTimeStamp:**
+
+    ORDINAL_POSITION: 23, COLUMN_DEFAULT: , IS_NULLABLE: YES, DATA_TYPE: timestamp, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **ExchangeRate:**
+
+    ORDINAL_POSITION: 26, COLUMN_DEFAULT: -1, IS_NULLABLE: NO, DATA_TYPE: float, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **FOBPoint:**
+
+    ORDINAL_POSITION: 14, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 20
+ 
+-   **Freight:**
+
+    ORDINAL_POSITION: 18, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 20
+ 
+-   **ID:**
+
+    ORDINAL_POSITION: 6, COLUMN_DEFAULT: , IS_NULLABLE: NO, DATA_TYPE: int, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **InventoryLocation:**
+
+    ORDINAL_POSITION: 28, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: int, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **IsPlaced:**
+
+    ORDINAL_POSITION: 29, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: bit, CHARACTER_MAXIMUM_LENGTH: 
+ 
 -   **LastUpdated:**
 
+    ORDINAL_POSITION: 1, COLUMN_DEFAULT: (getdate()), IS_NULLABLE: NO, DATA_TYPE: datetime, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **OtherPOID:**
+
+    ORDINAL_POSITION: 27, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: int, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **OtherStoreID:**
+
+    ORDINAL_POSITION: 24, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: int, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **PONumber:**
+
+    ORDINAL_POSITION: 7, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 20
+ 
 -   **POTitle:**
 
+    ORDINAL_POSITION: 2, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 50
+ 
 -   **POType:**
+
+    ORDINAL_POSITION: 3, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: int, CHARACTER_MAXIMUM_LENGTH: 
     - "0" - Standard PO issued to Vendor
     - "1" - HQ Origin to vendor to branch? (In "Purchase Orders" list) **Speculation**
     - "2" - Local Transfer inventory *IN*
     - "3" - Local Transfer inventory *OUT*
     - "4" - HQ Origin issued Inventory In (Found in "Transfer inventory In" list) (Confirmed from "Orders - Inventory transfer In List.qrp")
     - "5" - HQ Origin issued Inventory Out (Found in "Transfer Inventory Out" list) (Confirmed from "Orders - Inventory transfer Out List.qrp")
-
--   **StoreID:**
-
--   **WorksheetID:**
-
--   **ID:**
-
--   **PONumber:**
-
--   **DateCreated:**
-
--   **To:**
-
--   **ShipTo:**
-
--   **Requisitioner:**
-
--   **ShipVia:**
-
--   **FOBPoint:**
-
--   **Terms:**
-
--   **TaxRate:**
-
--   **Shipping:**
-
--   **Freight:**
-
--   **RequiredDate:**
-
--   **ConfirmingTo:**
-
+ 
 -   **Remarks:**
 
+    ORDINAL_POSITION: 21, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 30
+ 
+-   **RequiredDate:**
+
+    ORDINAL_POSITION: 19, COLUMN_DEFAULT: , IS_NULLABLE: YES, DATA_TYPE: datetime, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **Requisitioner:**
+
+    ORDINAL_POSITION: 12, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 20
+ 
+-   **Shipping:**
+
+    ORDINAL_POSITION: 17, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: money, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **ShipTo:**
+
+    ORDINAL_POSITION: 11, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 255
+ 
+-   **ShipVia:**
+
+    ORDINAL_POSITION: 13, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 20
+ 
+-   **Status:**
+
+    ORDINAL_POSITION: 8, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: smallint, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **StoreID:**
+
+    ORDINAL_POSITION: 4, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: int, CHARACTER_MAXIMUM_LENGTH: 
+ 
 -   **SupplierID:**
 
--   **DBTimeStamp:**
+    ORDINAL_POSITION: 22, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: int, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **TaxRate:**
 
--   **OtherStoreID:**
+    ORDINAL_POSITION: 16, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: real, CHARACTER_MAXIMUM_LENGTH: 
+ 
+-   **Terms:**
 
--   **CurrencyID:**
+    ORDINAL_POSITION: 15, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 20
+ 
+-   **To:**
 
--   **ExchangeRate:**
+    ORDINAL_POSITION: 10, COLUMN_DEFAULT: (''), IS_NULLABLE: NO, DATA_TYPE: nvarchar, CHARACTER_MAXIMUM_LENGTH: 255
+ 
+-   **WorksheetID:**
 
--   **OtherPOID:**
+    ORDINAL_POSITION: 5, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: int, CHARACTER_MAXIMUM_LENGTH: 
+ 
 
--   **InventoryLocation:**
-
--   **IsPlaced:**
-
--   **DatePlaced:**
-
--   **BatchNumber:**
-
--   **EstShipping:**
-
--   **CurrentShipping:**
-
--   **EstOtherFees:**
-
--   **CurrentOtherFees:**
-
--   **OtherFees:**
-
--   **CostDistributionMethod:**
-
--   **ParrentPOId:**
-
--   **RootPOId:**
-
--   **OriginPOId:**
-
--   **MasterPO:**
-
--   **DiscrepancyStatus:**
 
 ## PurchaseOrderEntry
 
