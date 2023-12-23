@@ -1485,7 +1485,10 @@ This table contains the messages which are displayed on the pole display
  
 -   **Status:**
 
-    ORDINAL_POSITION: 8, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: smallint, CHARACTER_MAXIMUM_LENGTH: 
+    ORDINAL_POSITION: 8, COLUMN_DEFAULT: 0, IS_NULLABLE: NO, DATA_TYPE: smallint, CHARACTER_MAXIMUM_LENGTH:
+    - "0" - Open
+    - "1" - Partial
+    - "2" - Close
  
 -   **StoreID:**
 
